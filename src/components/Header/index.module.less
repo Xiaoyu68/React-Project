@@ -1,0 +1,37 @@
+.header{
+    background-color: white;
+    .headertop{
+        height: 60px;  //高度
+        line-height: 60px; //垂直方向居中
+        padding: 0 20px;
+        text-align: right; //移到最右边
+        a{
+            margin-left: 20px;//离左侧的元素的距离
+        }
+    }
+    .breadcrumb{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px; //上下0,左右20
+        border-top: 1px solid #f9c700;
+        .breadcrumbtitle{
+            text-align: center;
+            &:after{
+                position: absolute;
+                content: '';
+                left:42px;
+                top:39px;
+                border-top: 9px solid white;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                
+            }
+        }
+        .weather{
+            text-align: right;
+            .date{
+                margin-right: 10px;
+            }
+        }
+    }
+}
